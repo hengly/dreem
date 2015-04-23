@@ -1,11 +1,6 @@
 dependencies:
   post:
-    - npm install simplehttpserver
-    - git submodule sync
-    - git submodule update --init
-    - cd server && npm install
-    - cd server && DREEM_ROOT=../ node server.js:
-        background: true
+    - ./bin/teemserver
 #    - wget https://saucelabs.com/downloads/sc-latest-linux.tar.gz
 #    - tar -xzf sc-latest-linux.tar.gz
 test:
